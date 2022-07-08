@@ -1,15 +1,11 @@
-// TODO: move this into a class because i'm lazy.
-
-const fs = require("fs");
+require("./scripts/globals")();
 
 const express = require("express");
 const cors = require("cors");
 const morgan = require("morgan");
 const multer = require("multer");
-const toml = require("toml"); // TODO: Move this into globals.
 
 const app = express();
-const config = toml.parse(fs.readFileSync("./config.toml"));
 
 app.use(morgan('tiny'));
 app.use(cors());
@@ -23,7 +19,7 @@ app.get('/', (req, res) => {
     });
 });
 
-const port = config.port || 4545;
+const port = Config.port || 4545;
 app.listen(port, () => {
     console.log(`Listening on ${port}`)
 })
