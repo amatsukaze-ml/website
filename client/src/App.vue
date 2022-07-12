@@ -1,22 +1,32 @@
 <script setup>
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
-import HelloWorld from './components/HelloWorld.vue'
+import Navbar from './components/Navbar.vue';
+import NavbarRoute from './components/Navbar/Route.vue';
 </script>
 
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <fa icon="fa-solid fa-user-secret" />
-  <HelloWorld msg="Hello Vue 3 is gay + Vite" />
+  <Navbar>
+    <NavbarRoute name="Home" icon="fa-solid fa-house" url="/" />
+    <NavbarRoute name="Mods" icon="fa-solid fa-gear" url="/mods" />
+    <NavbarRoute name="Manual" icon="fa-solid fa-book-open" url="/manual" />
+  </Navbar>
 </template>
 
 <style lang="less">
+@import "./utilities/reset.less";
+
 #app {
     font-family: "Karla", Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
-    margin-top: 60px;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-family: "Krona One", Helvetica, Arial, sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
 }
 </style>
