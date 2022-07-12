@@ -6,9 +6,11 @@ import NavbarRoute from './components/Navbar/Route.vue';
 <template>
   <Navbar>
     <NavbarRoute name="Home" icon="fa-solid fa-house" url="/" />
+    <NavbarRoute name="About" icon="fa-solid fa-house" url="/about" />
     <NavbarRoute name="Mods" icon="fa-solid fa-gear" url="/mods" />
     <NavbarRoute name="Manual" icon="fa-solid fa-book-open" url="/manual" />
   </Navbar>
+  <router-view></router-view>
 </template>
 
 <style lang="less">

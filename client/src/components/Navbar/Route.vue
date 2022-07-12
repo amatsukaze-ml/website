@@ -7,14 +7,14 @@ defineProps({
 </script>
 
 <template>
-  <div class="route">
+  <router-link :to=url class="route">
     <div class="route--icon">
       <fa :icon=icon />
     </div>
     <div class="route--name">
       {{ name }}
     </div>
-  </div>
+  </router-link>
 </template>
 
 <style scoped lang="less">
