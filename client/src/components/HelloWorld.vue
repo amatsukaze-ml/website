@@ -34,6 +34,10 @@ const count = ref(0)
 </template>
 
 <style scoped>
+h1 {
+  font-family: "Krona one", Helvetica, Arial, sans-serif;
+}
+
 a {
   color: #42b983;
 }
