@@ -25,6 +25,7 @@ defineProps({
   gap: 8px;
   align-items: center;
   padding: 0px 12px;
+  margin-top: 1px;
   margin-bottom: -1px;
   border-radius: 10px 10px 0 0;
   font-size: 16px;
@@ -42,7 +43,7 @@ defineProps({
   }
 }
 
-.selected {
+.route--selected {
   background: hsla(255, 100%, 50%, 1);
   color: white;
   font-weight: 700;

@@ -49,7 +49,7 @@ import NavbarLink from './Navbar/Link.vue';
         background: white;
         margin-left: 16px;
         margin-right: -16px;
-        margin-bottom: 2px;
+        margin-bottom: 3px;
         border-radius: 0 0 0 10px;
         transform: skewX(-10deg);
 
