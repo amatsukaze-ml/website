@@ -6,6 +6,7 @@ import HelloWorld from './components/HelloWorld.vue'
 
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
+  <fa icon="fa-solid fa-user-secret" />
   <HelloWorld msg="Hello Vue 3 is gay + Vite" />
 </template>
 
